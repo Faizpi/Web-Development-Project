@@ -1,15 +1,109 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f4;
+      }
 
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+      main {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: left;
+      }
 
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        text-align: center;
+      }
 
-<!-- TODO 4: Add titles/subtitles etc. -->
+      h2 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        color: #555;
+        text-align: center;
+      }
 
-<!-- TODO 5: Add a link to the project pages -->
+      h3 {
+        font-size: 1.2rem;
+        margin: 20px 0 10px;
+      }
 
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+      a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
 
-<!-- TODO 7: Add the Contact Me and About Me page links -->
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+
+      hr {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ddd;
+      }
+
+      @media (max-width: 400px) {
+        main {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        h2 {
+          font-size: 1.2rem;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Faiz's Portfolio</h1>
+      <h2>I'm a Web Developer</h2>
+      <hr />
+      <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
+      <img
+        src="./assets/images/Moovie.png"
+        alt="movie ranking project preview"
+      />
+      <h3>
+        <a href="./public/birthday-invite.html">Birthday Invite Project</a>
+      </h3>
+      <img
+        src="./assets/images/birthdayinvite.png"
+        alt="birthday invite project preview"
+      />
+      <hr />
+      <a href="./public/about.html">About Me</a>
+      <br />
+      <a href="./public/contact.html">Contact Me</a>
+    </main>
+  </body>
+</html>
